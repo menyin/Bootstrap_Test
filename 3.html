@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style>
+        div[class*="col-lg-"] {
+            background: gray;
+            border: 1px solid black;
+            height: auto;
+        }
+    </style>
+    <title>列偏移和列排序</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-lg-offset-4">
+            测试列偏移col-lg-4
+        </div>
+        <div class="col-lg-5">
+            测试列偏移col-lg-5
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4  col-lg-push-3">
+            测试列排序col-lg-4
+        </div>
+        <div class="col-lg-5">
+            测试列排序col-lg-5
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-7  ">
+            测试列排序col-lg-4
+        </div>
+        <div class="col-lg-5 col-lg-pull-3">
+            测试列排序col-lg-5
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>响应式工具、固定定位</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style>
+        div[class*="col-"] {
+            background: gray;
+            border: 1px solid black;
+            height: auto;
+            left:0;
+        }
+    </style>
+</head>
+<body style="height:2000px;"><!--设置出现滚动条-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1 pull-right visible-lg-block">col-lg-4右侧固定菜单1200以上,会随滚动条滚动</div>
+        <div class="col-md-1 pull-right visible-md-block">col-lg-4右侧固定菜单992-1200，会随滚动条滚动</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 affix visible-lg-block">col-lg-4左侧固定菜单1200以上，不会随滚动条滚动</div>
+        <div class="col-md-1 affix visible-md-block">col-lg-4左侧固定菜单992-1200，不会随滚动条滚动</div>
+    </div>
+</div>
+</body>
+</html>
