@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>选项卡</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+<body>
+<h2>基本选项卡</h2>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#one" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#two" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#three" data-toggle="tab">Messages</a></li>
+</ul>
+<ul class="tab-content">
+    <li class="tab-pane active" id="one">aaaaaaaaaaaaaaaaa</li>
+    <li class="tab-pane" id="two">bbbbbbbbbbbbbbbbb</li>
+    <li class="tab-pane" id="three">ccccccccccccccccc</li>
+</ul>
+<hr/>
+<br/>
+
+<h2>胶囊选项卡</h2>
+<ul class="nav nav-pills">
+    <li class="active"><a href="#one2" data-toggle="tab">one</a></li>
+    <li><a href="#two2" data-toggle="tab">two</a></li>
+    <li><a href="#three2" data-toggle="tab">three</a></li>
+</ul>
+<ul class="tab-content">
+    <li class="tab-pane active " id="one2">aaaaaaaaaa</li>
+    <li class="tab-pane" id="two2">bbbbbbbbbb</li>
+    <li class="tab-pane" id="three2">cccccccccc</li>
+</ul>
+<h2>选项卡渐入效果</h2>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#one3" data-toggle="tab">one</a></li>
+    <li><a href="#two3" data-toggle="tab">two</a></li>
+    <li><a href="#three3" data-toggle="tab">three</a></li>
+</ul>
+<ul class="tab-content">
+    <li class="tab-pane active" id="one3"></li>
+    <li class="tab-pane" id="two3"></li>
+    <li class="tab-pane" id="three3"></li>
+</ul>
+<h2>选项卡限宽</h2>
+container包裹限宽
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#one4" data-toggle="tab">one</a></li>
+        <li><a href="#two4" data-toggle="tab">two</a></li>
+        <li><a href="#three4" data-toggle="tab">three</a></li>
+    </ul>
+    <ul class="tab-content">
+        <li class="tab-pane active" id="one4">aaaaaaaaaaaaaaa</li>
+        <li class="tab-pane" id="two4">bbbbbbbbbbbbbbb</li>
+        <li class="tab-pane" id="three4">ccccccccccccccc</li>
+    </ul>
+</div>
+div包裹并设置width限宽
+<div style="width:400px; margin: 0 auto;">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#one5" data-toggle="tab">one</a></li>
+        <li><a href="#two5" data-toggle="tab">two</a></li>
+        <li><a href="#three5" data-toggle="tab">three</a></li>
+    </ul>
+    <ul class="tab-content">
+        <li class="tab-pane active" id="one5">aaaaaaaaaaaaaaa</li>
+        <li class="tab-pane" id="two5">bbbbbbbbbbbbbbb</li>
+        <li class="tab-pane" id="three5">ccccccccccccccc</li>
+    </ul>
+</div>
+<h2>端点对齐</h2>
+
+<div style="width:600px;margin:0 auto;">
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a data-toggle="tab" href="#one6">one</a></li>
+        <li><a data-toggle="tab" href="#two6">two</a></li>
+        <li><a data-toggle="tab" href="#three6">three</a></li>
+    </ul>
+    <ul class="tab-content">
+        <li class="tab-pane active" id="one6">aaaaaaaaaaaaa</li>
+        <li class="tab-pane" id="two6">bbbbbbbbbbbbb</li>
+        <li class="tab-pane" id="three6">ccccccccccccc</li>
+    </ul>
+</div>
+<h2>竖排选项卡</h2>
+
+<div class="container">
+    <div class="col-lg-3">
+        <ul class="nav nav-pills  nav-stacked pull-left">
+
+            <li class="active"><a href="#one7" data-toggle="tab">one</a></li>
+            <li><a href="#two7" data-toggle="tab">two</a></li>
+            <li><a href="#three7" data-toggle="tab">three</a></li>
+        </ul>
+        <ul class="tab-content pull-left">
+            <li class="tab-pane active" id="one7">aaaaaaaaaaaaaaa</li>
+            <li class="tab-pane" id="two7">bbbbbbbbbbbbbbb</li>
+            <li class="tab-pane" id="three7">ccccccccccccccc</li>
+        </ul>
+    </div>
+</div>
+<h2>选项卡中添加下拉菜单</h2>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#one8" data-toggle="tab">one</a></li>
+    <li><a href="#two8" data-toggle="tab">two</a></li>
+    <li><a href="#three8" data-toggle="tab">three</a></li>
+    <li>
+        <div class="dropdown navbar-btn">
+            <button class="btn  btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                four <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#four8" data-toggle="tab">four</a></li>
+                <li><a href="#five8" data-toggle="tab">five</a></li>
+            </ul>
+        </div>
+    </li>
+</ul>
+<ul class="tab-content">
+    <li class="tab-pane" id="one8">aaaaaaaaaaa</li>
+    <li class="tab-pane" id="two8">bbbbbbbbbbb</li>
+    <li class="tab-pane" id="three8">ccccccccccc</li>
+    <li class="tab-pane" id="four8">ddddddddddd</li>
+    <li class="tab-pane" id="five8">eeeeeeeeeee</li>
+
+</ul>
+<br/>
+
+<ul class="nav nav-tabs">
+    <li class="active" ><a href="#one9" data-toggle="tab">one</a></li>
+    <li><a href="#two9" data-toggle="tab">two</a></li>
+    <li><a href="#three9" data-toggle="tab">three</a></li>
+    <li class="dropdown">
+            <a class="dropdown-toggle"  data-toggle="dropdown">
+                four <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li ><a href="#four9" data-toggle="tab">four</a></li>
+                <li><a href="#five9" data-toggle="tab">five</a></li>
+            </ul>
+    </li>
+</ul>
+<ul class="tab-content">
+    <li class="tab-pane" id="one9">aaaaaaaaaaa</li>
+    <li class="tab-pane" id="two9">bbbbbbbbbbb</li>
+    <li class="tab-pane" id="three9">ccccccccccc</li>
+    <li class="tab-pane" id="four9">ddddddddddd</li>
+    <li class="tab-pane" id="five9">eeeeeeeeeee</li>
+
+</ul>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</body>
+</html>

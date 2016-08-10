@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style>
+        div[class*="col-"] {
+            border: 1px solid black;
+            padding: 4px;
+            height: 100px;
+        }
+
+        .move {
+            -webkit-animation: 0.3s linear fadeIn;
+            -o-animation: 0.5s linear fadeIn;
+            animation: 0.5s linear fadeIn;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate-Y(-30px);
+                -moz-transform: translate-Y(-30px);
+                -ms-transform: translate-Y(-30px);
+                -o-transform: translate-Y(-30px);
+                transform: translate-Y(-30px);
+
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate-Y(0);
+                -moz-transform: translate-Y(0);
+                -ms-transform: translate-Y(0);
+                -o-transform: translate-Y(0);
+                transform: translate-Y(0);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                    基本
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">去除了多余自定义属性
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">菜单1</a></li>
+                    <li><a href="#">菜单2</a></li>
+                    <li><a href="#">菜单3</a></li>
+                    <li><a href="#">菜单4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="dropdown open">
+                <button class="btn btn-primary dropdow-toggle" data-toggle="dropdown">
+                    改默认背景样式
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header">这是标题</li>
+                    <li><a href="#">菜单</a></li>
+                    <li><a href="#">菜单</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">这是标题</li>
+                    <li><a href="#">菜单</a></li>
+                    <li><a href="#">菜单</a></li>
+                    <li><a href="#">菜单</a></li>
+                    <li class="disabled"><a href="#">禁止项</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="dropdown pull-right open">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    对齐样式更改 对齐样式更改 对齐样式更改
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">菜单</a></li>
+                    <li><a href="#">菜单</a></li>
+                    <li><a href="#">菜单</a></li>
+                    <li><a href="#">菜单</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-lg-5">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                    使菜单和父级容器宽度一致
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu btn-block" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" data-target=".dropdown" type="button"
+                            id="dropdownMenu1" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                        data-target作用是触发联动
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+
+        </div>
+    </div>
+    <br/>
+
+    <div class="row">
+        <h2><a href="https://www.codester.com/">codester实例</a></h2>
+
+        <p>>
+
+        <div class="col-lg-4">
+            <div class="btn btn-group">
+                <div class="dropdown btn test" style="padding:0;">
+                    <button class="btn btn-default dropdown-toggle"
+                            style="border:none;-webkit-border-radius:0;-moz-border-radius: 0;border-radius: 0;"
+                            type="button" data-toggle="dropdown"
+
+                            aria-haspopup="true" aria-expanded="true">
+                        加运动效果
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu testmenu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">插件1</a></li>
+                        <li><a href="#">插件2</a></li>
+                        <li><a href="#">插件3</a></li>
+                        <li><a href="#">插件4</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown btn" style="padding:0;">
+                    <button class="btn btn-default dropdown-toggle"
+                            style="border:none;-webkit-border-radius:0;-moz-border-radius: 0;border-radius: 0;"
+                            type="button" data-toggle="dropdown"
+
+                            aria-haspopup="true" aria-expanded="true">
+                        没加运动效果
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">插件1</a></li>
+                        <li><a href="#">插件2</a></li>
+                        <li><a href="#">插件3</a></li>
+                        <li><a href="#">插件4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.test').click(function () {
+        $('.testmenu').addClass('move');
+    });
+</script>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</body>
+</html>
