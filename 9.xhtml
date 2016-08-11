@@ -4,9 +4,163 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title></title>
+    <title>导航条</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
-<body>
+<body style="height: 3000px;margin-top:60px;">
+<h2>基本导航条</h2>
 
+<div class="container">
+    <nav class="navbar navbar-default ">
+        <ul class="nav navbar-nav ">
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#">第二页</a></li>
+            <li><a href="#">第三页</a></li>
+        </ul>
+    </nav>
+</div>
+<h2>设置非圆角</h2>
+
+<div class="container">
+    <nav class="navbar navbar-default navbar-static-top">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">第1页</a></li>
+            <li><a href="#">第2页</a></li>
+            <li><a href="#">第3页</a></li>
+        </ul>
+    </nav>
+</div>
+
+<h2>设置满屏</h2>
+可用container的div包裹或其它限宽div
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">第1页</a></li>
+            <li><a href="#">第2页</a></li>
+            <li><a href="#">第3页</a></li>
+        </ul>
+    </div>
+</nav>
+<h2>设置背景色为反色调，就是黑色背景</h2>
+<nav class="navbar navbar-inverse">
+    <div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#" style="color:white">第1页</a></li>
+            <li><a href="#" style="color:white">第1页</a></li>
+            <li><a href="#" style="color:white">第1页</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="#">固定到头部</a></li>
+            <li><a href="#">固定到头部</a></li>
+            <li><a href="#">固定到头部</a></li>
+        </ul>
+    </div>
+</nav>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="#">固定到底部</a></li>
+            <li><a href="#">固定到底部</a></li>
+            <li><a href="#">固定到底部</a></li>
+        </ul>
+    </div>
+</nav>
+<h2>添加logo占位符</h2>
+<nav class="navbar navbar-defaultv">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">LOGO</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">第1页</a></li>
+            <li><a href="#">第2页</a></li>
+            <li><a href="#">第3页</a></li>
+        </ul>
+    </div>
+</nav>
+<h2>添加搜索输入框(其实是插入表单)</h2>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="#">第1页</a></li>
+            <li><a href="#">第1页</a></li>
+            <li><a href="#">第1页</a></li>
+        </ul>
+        <form action="#" method="post" class="navbar-form">
+            <input type="text" class="form-control" placeholder="输入搜索关键字"/>
+            <input class="btn btn-primary" type="button" value="搜索"/>
+        </form>
+    </div>
+</nav>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="#">第1页</a></li>
+            <li><a href="#">第1页</a></li>
+            <li><a href="#">第1页</a></li>
+        </ul>
+        <form action="#" method="post" class="navbar-form">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="输入搜索关键字"/>
+                <span class="input-group-addon"><a href="#"><span class="glyphicon glyphicon-search"></span></a></span>
+                <!--<input class="input-group-addon" type="button" value="搜索"/>--><!--这样不行-->
+            </div>
+        </form>
+    </div>
+</nav>
+<h2>添加文字或链接</h2>
+<nav class="navbar navbar-default">
+    <div class="container">
+
+        <ul class="nav navbar-nav">
+            <li><a href="#">第1页</a></li>
+            <li><a href="#">第1页</a></li>
+            <li><a href="#">第1页</a></li>
+        </ul>
+        <span class="navbar-text">欢迎您:陈南阳</span>
+        <span class="navbar-text">
+        <a href="#" class="navbar-link">注册</a>
+        </span>
+                <span class="navbar-text">
+        <a href="#" class="navbar-link">登录</a>
+    </span>
+    </div>
+</nav>
+
+<h2>知乎网站导航实例</h2>
+<nav class="navbar navbar-default navbar-static-top" style="background-color:darkblue;">
+    <div style="width:1000px; margin:0 auto; ">
+        <div class="navbar-header" style="margin-top:-8px;">
+            <a class="navbar-brand" href="#"><img src="images/zhihu_logo.png" alt=""/></a>
+        </div>
+        <form action="#" class="navbar-form navbar-left">
+            <div class="input-group">
+                <input class="form-control" type="text"/>
+                <span class="input-group-addon" style="background-color:darkblue;">
+                    <span class="glyphicon glyphicon-search " style="color:white"></span>
+                </span>
+            </div>
+        </form>
+        <ul class="nav navbar-nav navbar-left">
+            <li><a href="#" style="color:white">首页</a></li>
+            <li><a href="#" style="color:white">话题</a></li>
+            <li><a href="#" style="color:white">发现</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" style="color:white"><span class="glyphicon glyphicon-user"></span>注册知乎</a></li><!--此处span放到a之外会出现布局错乱-->
+            <li><a href="#" style="color:white">登录</a></li>
+        </ul>
+        <button type="button" class="btn btn-primary navbar-btn navbar-right">提问</button>
+    </div>
+</nav>
 </body>
+
 </html>
