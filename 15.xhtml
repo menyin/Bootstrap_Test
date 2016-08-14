@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>输入框组合导航组件</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+<h2>input组</h2>
+input添加文字等附加信息
+<div class="input-group">
+    <input type="text" class="form-control"/>
+    <!--<div class="input-group-addon">搜索</div>-->
+    <span class="input-group-addon">文本</span>
+</div>
+<div class="input-group">
+    <input type="text" class="form-control"/>
+    <span class="input-group-addon">@qq,com</span>
+</div>
+<div class="input-group">
+    <input type="text" class="form-control"/>
+
+    <div class="input-group-addon"><input type="checkbox"/></div>
+</div>
+input添加按钮
+<div class="input-group">
+    <span class="input-group-btn">
+        <button class="btn btn-primary">按钮</button>
+        </span>
+    <input type="text" class="form-control"/>
+</div>
+input组大小
+
+<div class="input-group input-group-lg">
+    <span class="input-group-btn">
+        <button class="btn btn-primary">按钮</button>
+        </span>
+    <input type="text" class="form-control"/>
+</div>
+<div class="input-group input-group-sm">
+    <span class="input-group-btn">
+        <button class="btn btn-primary">按钮</button>
+        </span>
+    <input type="text" class="form-control"/>
+</div>
+
+<div class="input-group input-group-xs">
+    <span class="input-group-btn">
+        <button class="btn btn-primary">按钮</button>
+        </span>
+    <input type="text" class="form-control"/>
+</div>
+input组添加下拉菜单
+<div class="container">
+    <div class="input-group">
+        <button class="form-control"></button>
+        <div class="input-group-btn">
+            <div class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></div>
+            <ul class="dropdown-menu pull-right">
+                <li><a href="#">菜单1</a></li>
+                <li><a href="#">菜单1</a></li>
+                <li><a href="#">菜单1</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<h2>选项卡组件</h2>
+基本选项卡
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#">选项卡1</a></li>
+    <li><a href="#">选项卡2</a></li>
+    <li><a href="#">选项卡3</a></li>
+</ul>
+胶囊选项卡
+<ul class="nav nav-pills">
+    <li class="active"><a href="#">选项卡1</a></li>
+    <li><a href="">选项卡2</a></li>
+    <li><a href="">选项卡3</a></li>
+</ul>
+垂直胶囊选项卡
+<ul class="nav nav-pills nav-stacked" style="width: 100px;">
+    <li class="active"><a href="">选项卡1</a></li>
+    <li><a href="">选项卡1</a></li>
+    <li><a href="">选项卡1</a></li>
+</ul>
+两端对齐选项卡
+<ul class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#">选项卡1</a></li>
+    <li><a href="#">选项卡2</a></li>
+    <li><a href="#">选项卡3</a></li>
+</ul>
+禁用选项卡
+<ul class="nav nav-tabs">
+    <li class="disabled"><a href="#">选项卡1</a></li>
+    <li class="active "><a href="#">选项卡2</a></li>
+    <li><a href="#">选项卡3</a></li>
+</ul>
+带下拉菜单选项卡
+<ul class="nav nav-tabs">
+    <li><a href="#">选项卡3</a></li>
+    <li><a href="#">选项卡3</a></li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown">选项卡3<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">菜单1</a></li>
+            <li><a href="#">菜单1</a></li>
+            <li><a href="#">菜单1</a></li>
+        </ul>
+    </li>
+</ul>
+选项卡与选项内容
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">选项卡1</a></li>
+    <li><a href="#tab2" data-toggle="tab">选项卡2</a></li>
+    <li><a href="#tab3" data-toggle="tab">选项卡3</a></li>
+</ul>
+<ul class="tab-content">
+    <li class="tab-pane active" id="tab1">选项卡内容1</li>
+    <li class="tab-pane" id="tab2">选项卡内容2</li>
+    <li class="tab-pane" id="tab3">选项卡内容3</li>
+</ul>
+<h2>导航条组件</h2>
+基本导航条
+<div class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">导航菜单1</a></li>
+        <li><a href="#">导航菜单2</a></li>
+        <li><a href="#">导航菜单3</a></li>
+    </ul>
+</div>
+添加标题块的导航条
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header"><a href="#">标题，此处可以添加一些logo之类的块</a></div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">导航菜单1</a></li>
+            <li><a href="#">导航菜单2</a></li>
+            <li><a href="#">导航菜单3</a></li>
+        </ul>
+    </div>
+</div>
+添加表单的导航条
+<div class="navbar navbar-default">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">导航菜单1</a></li>
+            <li><a href="#">导航菜单2</a></li>
+            <li><a href="#">导航菜单3</a></li>
+        </ul>
+        <form action="#" class="navbar-form input-group">
+            <input type="text" class="form-control pull-right"/>
+        <span class="input-group-btn">
+            <button class="btn btn-default">搜索</button>
+        </span>
+        </form>
+    </div>
+</div>
+添加按钮的导航条
+<div class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">菜单1</a></li>
+        <li><a href="#">菜单2</a></li>
+        <li><a href="#">菜单3</a></li>
+    </ul>
+    <button class="navbar-btn btn btn-default">导航按钮</button>
+</div>
+<div class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">菜单1</a></li>
+        <li><a href="#">菜单2</a></li>
+        <li><a href="#">菜单3</a></li>
+    </ul>
+    <button class="navbar-btn btn btn-default navbar-right">导航按钮</button>
+</div>
+<!--<div class="clearfix"></div>-->
+添加文字的导航条
+<div class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">菜单1</a></li>
+        <li><a href="#">菜单2</a></li>
+        <li><a href="#">菜单3</a></li>
+    </ul>
+    <p class="navbar-text">导航文字</p>
+
+</div>
+添加链接的导航条
+<div class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">菜单1</a></li>
+        <li><a href="#">菜单1</a></li>
+        <li><a href="#">菜单1</a></li>
+    </ul>
+        <p class="navbar-text"><a href="#" class="navbar-link">导航链接</a></p>
+</div>
+将导航条固定在顶部或底部用navbar-fixed-top和navbar-fixed-buttom
+<br/>
+<br/>
+<br/>
+<br/>
+</body>
+</html>

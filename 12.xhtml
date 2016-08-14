@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>表单和图片</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+<body>
+<form action="">
+    <label for="email1">您的邮箱</label>
+    <input type="email" name="email" id="email1" placeholder="请输入邮箱"/>
+    <label for="password1">密码</label>
+    <input type="password" name="password" id="password1" placeholder="请输入密码"/>
+</form>
+<!--<form action="" class="form-inline">-->
+<hr/>
+<form action="" class="form-inline">
+    <label for="email2">您的邮箱</label>
+    <input type="email" name="email" id="email2" placeholder="请输入邮箱"/>
+    <label for="password2">密码</label>
+    <input type="password" name="password" id="password2" placeholder="请输入密码"/>
+</form>
+<!--<form action="" class="form-inline">-->
+<hr/>
+<form action="" class="form-inline">
+    <div class="form-group">
+        <label for="email3">您的邮箱</label>
+        <input type="email" name="email" id="email3" placeholder="请输入邮箱"/>
+    </div>
+    <div class="form-group">
+        <label for="password3">密码</label>
+        <input type="password" name="password" id="password3" placeholder="请输入密码"/>
+    </div>
+</form>
+<hr/>
+<form action="" class="form-inline">
+    <div class="form-group">
+        <label for="email4">您的邮箱</label>
+        <input type="email" name="email" class="form-control" id="email4" placeholder="请输入邮箱"/>
+    </div>
+    <div class="form-group">
+        <label for="password4">密码</label>
+        <input type="password" name="password" class="form-control" id="password4" placeholder="请输入密码"/>
+    </div>
+</form>
+这个官网代码,水平对齐效果并没有效果
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="inputEmail">Email</label>
+
+        <div class="controls">
+            <input type="text" id="inputEmail" placeholder="Email"/>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputPassword">Password</label>
+
+        <div class="controls">
+            <input type="password" id="inputPassword" placeholder="Password"/>
+        </div>
+    </div>
+</form>
+水平对齐，有效果
+<form action="" class="form-horizontal">
+    <div class="form-group"><!--这个标签是固定用法，其实这里没什么用，但做提示的时候会用到-->
+        <label for="name" class="col-lg-2 control-label">姓名：</label>
+        <input type="text" id="name" class="col-lg-10 form-control:text"/>
+    </div>
+    <div class="form-group"><!--这个标签是固定用法，其实没什么用，但做提示的时候会用到-->
+        <label for="password" class="col-lg-2 control-label">密码：</label>
+        <input type="text" id="password" class="col-lg-10 form-control:text"/>
+    </div>
+</form>
+input组合
+<div style="width: 300px; margin: 0 auto;">
+    <div class="input-group">
+        <input type="text" name="jine" value="金额" id="" class="form-control"/>
+        <span class="input-group-addon">.00</span>
+    </div>
+</div>
+
+复选框未加div.checkbox
+<br/>
+<label for="sport">体育</label>
+<input type="checkbox" name="sport" id="sport"/>
+<label for="music">音乐</label>
+<input type="checkbox" name="music" id="music"/>
+<br/>
+复选框加div.checkbox，注意label必须包住input
+<div class="checkbox">
+    <label for="sport2">
+        <input type="checkbox" name="sport" id="sport2"/>
+        体育</label>
+</div>
+<div class="checkbox">
+    <label for="music2">
+        <input type="checkbox" name="music" id="music2"/>
+        音乐</label></div>
+<br/>
+官网直接将.checkbox加在label上，但这样没有效果
+<br/>
+<label for="life" class="checkbox">
+    <input type="checkbox" name="life" id="life"/>生活
+</label>
+
+复选框用.checkbox-inline
+<br/>
+<label for="life2" class="checkbox-inline">
+    <input type="checkbox" name="life" id="life2"/>生活
+</label>
+<br/>
+
+单选框使用和复选框一样
+<label for="nan" class="radio-inline">
+    <input type="radio" name="sex" id="nan"/>男
+</label>
+<label for="nv" class="radio-inline">
+    <input type="radio" name="sex" id="nv"/>女
+</label>
+<br/>
+<select name="depart" id="depart" class="form-control">
+    <option value="1" class="disabled" disabled="disabled" selected="selected">请选择部门</option>
+    <option value="1">一</option>
+    <option value="2">二</option>
+    <option value="3">三</option>
+    <option value="4">四</option>
+</select>
+
+<div class="container">
+    <form action="#" class="form-horizontal">
+        <div class="form-group has-feedback has-success">
+            <label for="name5" class="control-label">姓名：</label>
+            <input type="text" name="" id="name5" class="form-control"/>
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+        <div class="form-group has-error">
+            <label for="password5" class="control-label">密码:</label>
+            <input type="password" name="" id="password5" class="form-control"/>
+        </div>
+    </form>
+</div>
+<br/>
+控制input大小
+<input type="text" class="input-lg"/>
+<input type="text" class="input-sm"/>
+<input type="text"/>
+<br/>
+图片之形状控制和响应式
+<img src="images/zhihu_logo.png" alt="" class="img-rounded"/>
+<img src="images/zhihu_logo.png" alt="" class="img-circle"/>
+<img src="images/zhihu_logo.png" alt="" class="img-thumbnail"/>
+<img src="images/zhihu_logo.png" alt="" class="img-responsive"/>
+
+<br/>
+<br/>
+</body>
+</html>
