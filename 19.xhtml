@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>模态框组件</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+<h2>基本模态框</h2>
+<button class=" btn btn-primary" data-toggle="modal" data-target="#modal1">点击显示模态框</button>
+<div class="modal" id="modal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                <div class="modal-title">标题</div>
+            </div>
+            <div class="modal-body">
+                这是详细内容区
+            </div>
+            <div class="modal-footer">
+                这是注脚
+                <button class="btn btn-primary">登录</button>
+                <button class="btn btn-primary">退出</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+
+弹出框大小有3种：正常(如上)、lg、sm
+<br/>
+<button class="btn btn-primary" data-toggle="modal" data-target="#modal2">点击显示lg模态框</button>
+<div class="modal" id="modal2">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                <div class="modal-title"> lg的模态框</div>
+            </div>
+            <div class="modal-body">详细内容区</div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">登录</button>
+                <button class="btn btn-primary">退出</button>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn btn-primary" data-target="#modal3" data-toggle="modal">点击显示sm模态框</button>
+<div class="modal" id="modal3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                <div class="modal-title">sm的模态框</div>
+            </div>
+            <div class="modal-body">详细内容区</div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">登录</button>
+                <button class="btn btn-primary">退出</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+设置模态框淡入效果
+<br/>
+<button class="btn btn-primary" data-target="#modal4" data-toggle="modal">点击模态框淡入</button>
+<div class="modal fade" id="modal4">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                <div class="modal-title">淡入模态框</div>
+            </div>
+            <div class="modal-body">这是详细内容区</div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">登录</button>
+                <button class="btn btn-primary">退出</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+使用了container-fluid的模态框
+<br/>
+<button class="btn btn-primary" data-toggle="modal" data-target="#modal5">使用了container-fluid的模态框</button>
+<div class="modal" id="modal5" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                <div class="modal-title">
+                    使用了container-fluid的模态框
+                    当浏览器分辨率小于对应的阈值则其col列就会竖排排列
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4">1</div>
+                        <div class="col-lg-4">2</div>
+                        <div class="col-lg-4">3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">登录</button>
+                <button class="btn btn-primary">退出</button>
+            </div>
+        </div>
+    </div>
+</div>
+<h2>模态窗体还有其它js方法、事件调用详见文档</h2>
+</body>
+</html>

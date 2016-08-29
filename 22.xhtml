@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>按钮和折叠插件</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body style="padding: 40px;">
+<h2>按钮应用</h2>
+单个切换
+<button class="btn btn-primary" data-toggle="button" style="outline: none;" autocomplete="off">单个切换</button>
+<br/>
+单选按钮
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary" for="">
+        <input autocomplete="off" type="radio" name="sex" value="0"/>男
+    </label>
+    <label class="btn btn-primary" for="">
+        <input autocomplete="off" type="radio" name="sex" value="1"/>女
+    </label>
+</div>
+<br/>
+复选按钮
+<div class="btn-group" data-toggle="buttons">
+    <label for="" class="btn btn-primary">
+        <input type="checkbox" name="life" autocomplete="off" />生活
+    </label>
+    <label for="" class="btn btn-primary">
+        <input type="checkbox" name="play"  autocomplete="off" />娱乐
+    </label>
+    <label for="" class="btn btn-primary">
+        <input type="checkbox" name="music`" id=""  autocomplete="off"/>音乐
+    </label>
+
+</div>
+<br/>
+状态按钮
+<button id="teststatus" data-zidingyixinxi-text="状态变化(自定义属性可以随便写)" class="btn btn-primary" autocomplete="off">加载状态按钮</button>
+<script type="text/javascript">
+    $('#teststatus').on('click', function () {
+        $('#teststatus').button('zidingyixinxi');
+        setTimeout(function () {
+            $('#teststatus').button('reset');
+        },2000);
+    });
+</script>
+<h2>折叠插件</h2>
+基本使用
+<button class="btn btn-primary" data-toggle="collapse" data-target="#content">折叠按钮</button>
+<div class="collapse in"  id="content">
+    <div class="well">
+        需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容需要折叠的内容
+    </div>
+</div>
+手风琴效果
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="panel-title">
+                <a href="#collapse1" data-toggle="collapse" data-parent="#accordion" >点击进行折叠/展开</a>
+            </h2>
+        </div>
+        <div class="panel-collapse collapse in" id="collapse1">
+            <div class="panel-body">
+                这是折叠的内容区域1
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="panel-title">
+                <a href="#collapse2" data-toggle="collapse" data-parent="#accordion">点击进行折叠/展开</a>
+            </h2>
+        </div>
+        <div class="panel-collapse collapse" id="collapse2">
+            <div class="panel-body">
+                这是折叠的内容区域2
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="panel-title">
+                <a href="#collapse3" data-toggle="collapse" data-parent="#accordion">点击进行折叠/展开</a>
+            </h2>
+        </div>
+        <div class="panel-collapse collapse" id="collapse3">
+            <div class="panel-body">
+                这是折叠的内容区域3
+            </div>
+        </div>
+    </div>
+    js初始化方式代码略
+    <br/>折叠插件的方法
+    <button class="btn-btn-primary" id="btnhide">hide方法</button>
+    <button class="btn-btn-primary" id="btnshow">show方法</button>
+    <button class="btn-btn-primary" id="btntoggle">toggle方法</button>
+    <script type="text/javascript">
+        $('#btnhide').click(function () {
+            $('#collapse1').collapse('hide');
+        });
+        $('#btnshow').click(function () {
+            $('#collapse1').collapse('show');
+        });
+        $('#btntoggle').click(function () {
+            $('#collapse1').collapse('toggle');
+        });
+        $('#collapse1').on('show.bs.collapse', function () {
+            alert('展开之前触发');
+        });
+        $('#collapse1').on('shown.bs.collapse', function () {
+            alert('展开之后触发');
+        });
+        $('#collapse1').on('hide.bs.collapse', function () {
+            alert('折叠之前触发');
+        });
+        $('#collapse1').on('hidden.bs.collapse', function () {
+            alert('折叠之后触发');
+        });
+
+    </script>
+
+
+</div>
+</body>
+</html>

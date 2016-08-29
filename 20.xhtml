@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>工具提示插件</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+</head>
+<body style="padding: 100px;">
+<a class="myLink" href="#" data-toggle="tooltip" title="提示信息">工具提示插件</a>
+<h2>显示控制配置</h2>
+<a href="#" data-toggle="tooltip" data-animation="true" title="提示信息" class="myLink">动画显示</a>
+<br/>
+<!--<a href="#" id="myLink">提示信息可以包含html</a>-->
+<a href="#" data-toggle="tooltip" data-placement="bottom" class="myLink" title="提示信息">显示位置</a>
+<br/>
+<a href="#" data-toggle="tooltip" data-trigger="click" title="提示信息" class="myLink">显示触发方式</a>
+<br/>
+<a href="#" data-toggle="tooltip" data-delay="2000" title="提示信息" class="myLink">显隐延迟(要设置对象只能用js方式)</a>
+<br/>
+<a href="#" id="jsInit">js方式初始化</a><input id="jsInitBtOpen" type="button" value="开" class="btn btn-primary"/><input id="jsInitBtClose" type="button" value="关" class="btn btn-primary"/><input id="jsInitBtToggle" type="button" value="开/关" class="btn btn-primary"/><input id="jsInitBtDestroy" type="button" value="隐藏并销毁" class="btn btn-primary"/>
+<script type="text/javascript">
+    $('.myLink').tooltip();
+    /*$('#myLink').tooltip({
+        html:"true",
+        title:"<b>超文本标识符</b>"
+    });*/
+    $('#jsInit').tooltip({
+        title:'js初始化提示信息'
+    });
+    $('#jsInit').tooltip('hide');
+    $('#jsInitBtOpen').click(function () {
+        $('#jsInit').tooltip('show');
+    });
+    $('#jsInitBtClose').click(function () {
+        $('#jsInit').tooltip('hide');
+    });
+    $('#jsInitBtToggle').click(function () {
+        $('#jsInit').tooltip('toggle');
+    });
+    $('#jsInitBtDestroy').click(function () {
+        $('#jsInit').tooltip('destroy');
+    });
+    $('#jsInit').on('show.bs.tooltip', function () {
+        alert('显示前触发的事件');
+    });
+
+    $('#jsInit').on('shown.bs.tooltip', function () {
+        alert('显示后触发的事件');
+    });
+    $('#jsInit').on('hide.bs.tooltip', function () {
+        alert('隐藏前触发的事件');
+    });
+    $('#jsInit').on('hidden.bs.tooltip', function () {
+        alert('')隐藏后触发的事件
+    });
+
+</script>
+</body>
+</html>

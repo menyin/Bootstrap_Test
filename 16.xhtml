@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>巨幕、缩略图、弹出框组件</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+<h2>巨幕组件</h2>
+
+<div class="container">
+    <div class="jumbostron" style="background: gray;">
+        <h2>巨幕标题</h2>
+
+        <p>内容1</p>
+
+        <p><a href="#">内容2</a></p>
+    </div>
+</div>
+<div class="jumbostron" style="background: gray;">
+    <div class="container">
+        <h2>巨幕标题</h2>
+
+        <p>内容1</p>
+
+        <p>内容1</p>
+    </div>
+</div>
+<h2>页头组件</h2>
+
+<div class="page-header">
+    <h2>
+        大标题
+        <small>小标题</small>
+    </h2>
+</div>
+<h2>缩略图组件</h2>
+基本缩略图
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="thumbnail"><img src="images/codeguide.png" alt=""/></div>
+        </div>
+    </div>
+</div>
+添加文字缩略图
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="thumbnail">
+                <img src="images/codeguide.png" alt=""/>
+
+                <div class="caption">
+                    <h2>这是标题</h2>
+
+                    <p>这是描述</p>
+
+                    <p><a href="#">这是链接</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<h2>警告组件</h2>
+基本警告框
+<div class="alert alert-success">
+    成功绿警告框
+</div>
+<div class="alert alert-warning">
+    警告黄警告框
+</div>
+<div class="alert alert-danger">
+    危险红警告框
+</div>
+<div class="alert alert-info">
+    信息蓝警告框
+</div>
+带关闭按钮警告框
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="alert alert-warning">
+                <button class="close" data-dismiss="alert"><span>&times;</span></button>
+
+                危险黄警告框
+                <p>p标签</p>
+                <p>p标签</p>
+                <p>p标签</p>
+                <p>p标签</p>
+            </div>
+        </div>
+    </div>
+</div>
+适配型超链接弹出框
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="alert alert-warning">
+                <div class="close"><span>&times;</span></div>
+                下载bootstrap到官网<a class="alert-link" href="#">下载</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

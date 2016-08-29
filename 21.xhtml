@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>弹出框和警告框插件</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+</head>
+<body style="padding: 100px;">
+<h2>弹出框</h2>
+基本使用(标签声明)
+<button  class="btn btn-lg btn-danger" data-toggle="popover" title="弹出框" data-content="这是弹出框">点击弹出或隐藏弹出框</button>
+<button class="btn btn-lg btn-danger" data-animation="true" data-toggle="popover" title="弹出框" data-content="这是弹出框">添加运动的弹出框</button>
+<button class="btn btn-lg btn-danger" data-placement="left" data-toggle="popover" data-content="这是弹出框" title="弹出框" >控制弹出框位置</button>
+<button class="btn btn-lg btn-danger" data-toggle="popover" data-content="这是弹出框" data-trigger="hover" title="弹出框">设置触发弹出方式</button>
+<button class="btn btn-lg btn-danger" data-toggle="popover" data-content="这是弹出框" data-delay="2000">设置触发延迟</button>
+<br/>
+方法调用
+<button class="btn btn-lg btn-danger testmethod" data-toggle="popover" data-content="这是弹出框" title="弹出框" data-trigger="manual">show方法</button>
+<button class="btn btn-lg btn-danger testmethod" data-toggle="popover" data-content="这是弹出框" title="弹出框" data-trigger="manual">hide方法</button>
+<button class="btn btn-lg btn-danger testmethod" data-toggle="popover" data-content="这是弹出框" title="弹出框" data-trigger="manual">toggle方法</button>
+<button class="btn btn-lg btn-danger testmethod" data-toggle="popover" data-content="这是弹出框" title="弹出框" data-trigger="manual">destroy方法</button>
+<br/>
+事件调用
+<button class="btn btn-lg btn-danger testevent" data-toggle="popover" data-content="这是弹出框" title="弹出框" data-trigger="mannal">测试事件</button>
+
+<script type="text/javascript">
+$('button').popover();
+   $('.testmethod').popover('hide');
+$('.testmethod').eq(0).click(function () {
+    $(this).popover('show');
+});
+$('.testmethod').eq(1).popover('show');
+$('.testmethod').eq(1).click(function () {
+    $(this).popover('hide');
+});
+$('.testmethod').eq(2).click(function () {
+    $(this).popover('toggle');
+});
+$('.testmethod').eq(3).popover('show');
+$('.testmethod').eq(3).click(function () {
+    $(this).popover('destroy');
+});
+$('.testevent').on('show.bs.popover', function () {
+    alert('这是弹出框显示前触发');
+});
+$('.testevent').on('shown.bs.popover', function () {
+    alert('这是弹出框显示后触发');
+});
+$('.testevent').on('hide.bs.popover', function () {
+    alert('这是弹出框隐藏前触发');
+});
+$('.testevent').on('hidden.bs.popover', function () {
+    alert('这是弹出框隐藏后触发');
+});
+</script>
+<br/>
+<h2>警告框</h2>
+<div class="alert alert-warning">
+    <button class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    <p>警告框内容警告框内容警告框内容警告框内容警告框内容警告框内容警告框内容</p>
+</div>
+</body>
+</html>
